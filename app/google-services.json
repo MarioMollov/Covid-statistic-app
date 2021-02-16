@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593596538142",
+    "project_id": "covid-19-statistic-83f02",
+    "storage_bucket": "covid-19-statistic-83f02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593596538142:android:c4b6e95582cdb8c227bd0f",
+        "android_client_info": {
+          "package_name": "uni.fmi.masters.covid_19statistic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593596538142-i9dae6accu0qpse3nu54rimk3v52g0pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHzpMESR8dtxgrnPj3jRl-AGl490sqGgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593596538142-i9dae6accu0qpse3nu54rimk3v52g0pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
