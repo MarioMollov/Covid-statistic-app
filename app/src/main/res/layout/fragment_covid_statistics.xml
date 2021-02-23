@@ -62,7 +62,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="yyyy/mm/dd"
+                android:text="yyyy-mm-dd"
                 android:textColor="#000000"
                 android:textSize="16dp" />
 
@@ -80,11 +80,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <TextView
-        android:id="@+id/informationDateTextView"
+        android:id="@+id/lastUpdatedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="information from "
+        android:text="Last updated"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkForUpdatesButton" />
@@ -98,7 +98,6 @@
         android:background="#701010"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Новозаразени:\n"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +112,6 @@
         android:background="#2065D3"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Активни:\n"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +126,6 @@
         android:background="#D8B916"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Критични:\n"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +140,6 @@
         android:background="#276027"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Излекувани:\n"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -157,7 +153,6 @@
         android:background="#292929"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Починали:\n"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

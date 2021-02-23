@@ -103,11 +103,11 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onSuccess(AuthResult authResult) {
                         Toast.makeText(RegisterActivity.this, "User Created", Toast.LENGTH_SHORT).show();
 
-                        // getting automatically generated user id from the user that we just create
+                        // getting automatically generated user id from the user that we just created
                         userId = fAuth.getCurrentUser().getUid();
 
-                        //create (if there is no) new collection(this represent table) named "users"
-                        // and new document( this represent record) with id equal to the current user id
+                        //create (if there is no) new collection named "users"
+                        // and new document with id equal to the current user id
                         DocumentReference documentReference = db.collection(COLLECTION_USERS).document(userId);
 
                         //create user data using hashmap
@@ -116,9 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
                         user.put(FIREBASE_LAST_NAME,lname);
                         user.put(FIREBASE_EMAIL,email);
                         user.put(FIREBASE_PASSWORD, password);
-                        user.put(FIREBASE_AVATAR_PATH," https://firebasestorage.googleapis.com/v0/b/covid-19-statistic-83f" +
-                                "02.appspot.com/o/4c1I4KGQouRTQXpETkD8z53iUfm2%2FJPEG_15022021_003428.jpg?alt=media&token=" +
-                                "9ffe96b3-e683-4fda-bb8b-207f0515183e");
+                        user.put(FIREBASE_AVATAR_PATH," null");
 
                         // save created user data
                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
